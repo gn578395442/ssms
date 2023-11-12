@@ -18,10 +18,10 @@
   	<h2>系统环境</h2>
   	<p>系统环境：Windows</p>
 	<p>开发工具：Eclipse</p>
-	<p>Java版本：JDK 1.7</p>
-	<p>服务器：tomcat 7.0</p>
-	<p>数据库：MySQL 5.1</p>
-	<p>系统采用技术： Servlet+Jsp+Jdbc+dbutils+EasyUI+jQuery+Ajax+面向接口编程</p>
+	<p>Java版本：JDK 1.8</p>
+	<p>服务器：tomcat 8.5</p>
+	<p>数据库：MySQL 8.0</p>
+	<p>系统采用技术： Servlet+Jsp+Jdbc+dbutils+EasyUI+jQuery+Ajax+面向接口编程</p>f
 </div>
 </body>
 </html>

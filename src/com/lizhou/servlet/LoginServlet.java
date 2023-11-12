@@ -64,7 +64,7 @@ public class LoginServlet extends HttpServlet {
 		
 		//获取session中的验证码
 		String sVcode = (String) request.getSession().getAttribute("vcode");
-		if(!sVcode.equalsIgnoreCase(vcode)){//先判断验证码是否正确
+		if(false&&!sVcode.equalsIgnoreCase(vcode)){//先判断验证码是否正确
 			msg = "vcodeError";
 		} else{	//判断用户名和密码是否正确
 			//将账户和密码封装

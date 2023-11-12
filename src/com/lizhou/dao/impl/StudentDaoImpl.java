@@ -1,22 +1,18 @@
 package com.lizhou.dao.impl;
 
+import com.lizhou.bean.Clazz;
+import com.lizhou.bean.Grade;
+import com.lizhou.bean.Student;
+import com.lizhou.dao.inter.StudentDaoInter;
+import com.lizhou.tools.MysqlTool;
+import org.apache.commons.beanutils.BeanUtils;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.util.LinkedList;
 import java.util.List;
-
-import org.apache.commons.beanutils.BeanUtils;
-import org.junit.Test;
-
-import com.lizhou.bean.Clazz;
-import com.lizhou.bean.Grade;
-import com.lizhou.bean.Page;
-import com.lizhou.bean.Student;
-import com.lizhou.dao.inter.BaseDaoInter;
-import com.lizhou.dao.inter.StudentDaoInter;
-import com.lizhou.tools.MysqlTool;
 
 public class StudentDaoImpl extends BaseDaoImpl implements StudentDaoInter {
 

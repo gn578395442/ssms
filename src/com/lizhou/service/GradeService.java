@@ -1,15 +1,5 @@
 package com.lizhou.service;
 
-import java.lang.reflect.InvocationTargetException;
-import java.sql.Connection;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-
-import org.apache.commons.beanutils.BeanUtils;
-import org.junit.Test;
-
-import com.lizhou.bean.Clazz;
 import com.lizhou.bean.Course;
 import com.lizhou.bean.Grade;
 import com.lizhou.bean.Student;
@@ -17,10 +7,12 @@ import com.lizhou.dao.impl.BaseDaoImpl;
 import com.lizhou.dao.inter.BaseDaoInter;
 import com.lizhou.tools.MysqlTool;
 import com.lizhou.tools.StringTool;
-
 import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
 import net.sf.json.JsonConfig;
+
+import java.sql.Connection;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * 年级服务层
@@ -36,7 +28,6 @@ public class GradeService {
 	 * @param clazz 是否获取年级下课程
 	 * @return JSON格式的年级
 	 */
-	@Test
 	public String getGradeList(String course){
 		//获取数据
 		List<Object> list = dao.getList(Grade.class, "SELECT * FROM grade");
